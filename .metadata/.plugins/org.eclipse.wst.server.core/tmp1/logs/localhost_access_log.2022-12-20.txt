@@ -1,0 +1,16 @@
+127.0.0.1 - - [20/Dec/2022:22:03:22 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [20/Dec/2022:22:03:56 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:03:57 +0900] "GET /StudyJSP/ch04/pageDirectiveImport.jsp HTTP/1.1" 200 232
+127.0.0.1 - - [20/Dec/2022:22:04:37 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:04:37 +0900] "GET /StudyJSP/ch04/pageDirectiveImport.jsp HTTP/1.1" 200 232
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:04:40 +0900] "GET /StudyJSP/ch04/pageDirectiveImport.jsp HTTP/1.1" 200 232
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:06:52 +0900] "GET /StudyJSP/ch04/pageDirectiveSession.jsp HTTP/1.1" 200 256
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:17:43 +0900] "GET /StudyJSP/ch04/includeDirective.jsp HTTP/1.1" 200 584
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:18:21 +0900] "GET /StudyJSP/ch04/includeDirective.jsp HTTP/1.1" 500 2289
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:18:40 +0900] "GET /StudyJSP/ch04/bottom.jsp HTTP/1.1" 500 2206
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:18:48 +0900] "GET /StudyJSP/ch04/includeDirective.jsp HTTP/1.1" 200 585
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:19:54 +0900] "GET /StudyJSP/ch04/includeDirective.jsp HTTP/1.1" 500 75654
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:20:02 +0900] "GET /StudyJSP/ch04/includeDirective.jsp HTTP/1.1" 200 584
+127.0.0.1 - - [20/Dec/2022:22:22:57 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:22:57 +0900] "GET /StudyJSP/ch04/includeDirective.jsp HTTP/1.1" 200 584
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:22:38:12 +0900] "GET /StudyJSP/ch04/includeDirective.jsp HTTP/1.1" 200 585
