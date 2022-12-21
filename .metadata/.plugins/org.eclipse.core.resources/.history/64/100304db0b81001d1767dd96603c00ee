@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Request 내장 객체 예제</title>
+</head>
+<body>
+<h2>학번, 이름, 학년, 선택과목을 입력하는 폼</h2>
+<form method="post" action="requestTestPro.jsp">
+</form>
+</body>
+</html>
