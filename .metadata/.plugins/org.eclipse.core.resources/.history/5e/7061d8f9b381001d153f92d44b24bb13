@@ -1,0 +1,6 @@
+package ch10.bean;
+
+public class ExBean {
+	private String id , passwd;
+	private int number;
+}

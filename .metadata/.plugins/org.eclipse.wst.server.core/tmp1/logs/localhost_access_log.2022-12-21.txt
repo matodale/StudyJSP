@@ -64,3 +64,13 @@
 0:0:0:0:0:0:0:1 - - [21/Dec/2022:20:55:50 +0900] "POST /StudyJSP/ch08/includeTest.jsp HTTP/1.1" 200 221
 127.0.0.1 - - [21/Dec/2022:21:49:20 +0900] "GET / HTTP/1.1" 404 807
 0:0:0:0:0:0:0:1 - - [21/Dec/2022:21:49:21 +0900] "GET /StudyJSP/ch08/includeTest2.jsp HTTP/1.1" 200 327
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:22:21:39 +0900] "GET /StudyJSP/ch08/forwardTestForm.jsp HTTP/1.1" 200 601
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:22:21:45 +0900] "POST /StudyJSP/ch08/forwardTest.jsp HTTP/1.1" 200 126
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:22:24:22 +0900] "POST /StudyJSP/ch08/forwardTest.jsp HTTP/1.1" 200 173
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:22:24:23 +0900] "GET /StudyJSP/ch08/forwardTestForm.jsp HTTP/1.1" 200 601
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:22:24:28 +0900] "POST /StudyJSP/ch08/forwardTest.jsp HTTP/1.1" 200 176
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:22:24:30 +0900] "GET /StudyJSP/ch08/forwardTestForm.jsp HTTP/1.1" 200 601
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:22:24:44 +0900] "POST /StudyJSP/ch08/forwardTest.jsp HTTP/1.1" 200 188
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:22:24:46 +0900] "GET /StudyJSP/ch08/forwardTestForm.jsp HTTP/1.1" 200 601
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:23:36:37 +0900] "GET /StudyJSP/ch08/forwardTest2.jsp HTTP/1.1" 200 132
+0:0:0:0:0:0:0:1 - - [21/Dec/2022:23:48:40 +0900] "GET /StudyJSP/ch08/exam08_Form.jsp HTTP/1.1" 200 79

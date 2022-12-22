@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*"%>
+<h2>JDBC 드라이버 테스트</h2>
+<%--간단한 드라이버 테스트 입니다. --%>
+<%
+	Connection conn = null;
+	try{
+		// 연동할 데이터베이스를 포함한 url
+		String jdbcUrl = "jdbc:mysql://localhost:3306/basicjsp";
+		String dbId = "jspid"; // 사용자 계정 
+		String dbPass = "jspppass"; // 계정 패스워드
+		
+		Class.forName("com.mysql.jdbc.Driver"); // DriverManager 에 등록함.
+		// Connection 객체를 가져옴.
+		// String sql = "insert into member values(?,?,?,?)";
+		conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass);
+		out.println("제대로 연결되었습니다.");
+	}catch(Exception e){
+		e.printStackTrace();
+	}
+%>
