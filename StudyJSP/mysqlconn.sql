@@ -22,9 +22,11 @@ insert into member(id, passwd, name, reg_date)
 values('kingdora@dragon.com', '1234', '김개동', now());
 insert into member(id, passwd, name, reg_date)
 values('hongkd@aaa.com', '1111', '홍길동', now());
+insert into member(id, passwd, name, reg_date)
+values('gozilla@bbbb.com', '1234', '고질라', now());
 select * from member;
 select id, passwd from member;
 select id, passwd from member where id='hongkd@aaa.com';
-update member set passwd='3579' where id='hongkd@aaa.com';
+update member set passwd='4567' where id='hongkd@aaa.com';
 select * from member;
 select * from member where id='hongkd@aaa.com';

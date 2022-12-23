@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>
+<%request.setCharacterEncoding("utf-8"); %>
+<%
+	String id = request.getParameter("id");
+	String passwd = request.getParameter("passwd");
+	
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	try{
+		
+	}catch(Exception e){
+		e.printStackTrace();
+	}finally{
+		if(rs != null)
+			try{rs.close();}catch(SQLException sqle){}
+	}
+%>

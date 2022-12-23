@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*, javax.sql.*, javax.naming.*"%>
+<html>
+<head>
+<title>커넥션풀을 사용한 테이블의 레코드를 화면에 표시하는 예제</title>
+</head>
+<body>
+	<h3>커넥션풀을 사용한 테이블의 레코드를 화면에 표시하는 예제</h3>
+	<table border="1">
+		<tr>
+			<Td width="250">아이디</Td>
+			<Td width="100">패스워드</Td>
+			<Td width="100">이름</Td>
+			<Td width="250">가입일자</Td>
+		</tr>
+		<%
+			Connection conn = null;
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			
+			try{
+				
+			}catch(Exception e){
+				e.printStackTrace();
+			}finally{
+				if(rs != null)
+					try{rs.close();}catch(SQLException sqle){}
+				if(pstmt != null)
+					try{pstmt.close();}catch(SQLException sqle){}
+				if(conn != null)
+					try{conn.close();}catch(SQLException sqle){}
+			}
+		%>	
+	</table>
+</body>
+</html>

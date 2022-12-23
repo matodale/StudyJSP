@@ -7,6 +7,7 @@
 		<item value="Apache Tomcat v8.5"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="/usr/local/apache-tomcat-8.5.84/webapps/StudyJSP.war"/>
 		<item value="/usr/local/apache-tomcat-8.5.84/StudyJSP.war"/>
 		<item value="/usr/local/apache-tomcat-8.5.84/TestSample.war"/>
 	</list>
