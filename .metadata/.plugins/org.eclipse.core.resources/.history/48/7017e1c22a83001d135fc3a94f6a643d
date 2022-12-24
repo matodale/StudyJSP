@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+	font-size: 9pt; 
+}
+form {
+	font-size: 9pt; 
+}
+
+form table{
+	margin-left:auto; 
+	margin-right:auto;
+	text-align: center;
+	font-size: 9pt;
+	border: 1pt solid black;
+}
+
+select {
+	font-size: 9pt; 
+}
+
+p{
+	text-align: center;
+	font-weight: 700;
+}

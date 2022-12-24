@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String id = "";
+	try{
+		Cookie[] Cookies = request.getCookies();
+		if(Cookies!=null){
+			for(int i = 0; i<cookies.length;i++){
+				if(cookies[i].getName().equals("id")){
+					id = cookies[i].getValue();
+				}
+				if(id.equals(""))
+					response.sendRedirect("cookiesLoginForm.jsp");
+			}
+		}else{
+			response.sendRedirect("cookieLoginForm.jsp");
+		}
+	}catch(Exception e){}
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

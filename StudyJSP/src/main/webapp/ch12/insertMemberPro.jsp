@@ -16,4 +16,8 @@
 %>
 
 <jsp:getProperty property="id" name="member"/> 님의 회원 가입을 축하합니다.<br>
-<a href="insertMemberForm.jsp">뒤로가기</a>
+<!-- <a href="insertMemberForm.jsp">뒤로가기</a> -->
+<script>
+	alert("회원가입을 축하합니다.");
+	location.href="cookieMain.jsp";
+</script>

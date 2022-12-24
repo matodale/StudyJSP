@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+	font-size: 9pt; 
+}
+form {
+	font-size: 9pt; 
+}
+
+form .table1{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 9pt;
+	border: 1pt solid black;
+}
+
+select {
+	font-size: 9pt; 
+}
+
+div .textname1{
+	text-align: center;
+	font-weight: 700;
+}

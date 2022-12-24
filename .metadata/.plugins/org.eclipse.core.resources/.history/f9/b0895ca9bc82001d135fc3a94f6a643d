@@ -1,0 +1,28 @@
+package ch13.board;
+import java.sql.Timestamp;
+public class BoardDataBean {
+	// 글번호
+	private int num;
+	// 작성자
+	private String writer;
+	// 글제목
+	private String subject;
+	// 이메일
+	private String email;
+	// 글내용
+	private String content;
+	// 비밀번호
+	private String passwd;
+	// 글쓴 날짜
+	private Timestamp reg_date;
+	// 조회수 
+	private int readcount;
+	// 글 작성자의 ip 
+	private String ip;
+	// 글의 그룹 번호
+	private int ref;
+	// 제목글과 답변글의 순서
+	private int re_step;
+	// 글의 라벨
+	private int re_level;
+}
