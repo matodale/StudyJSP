@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.oreilly.servlet.MultipartRequest"%>
+<%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
+<%@ page import="java.util.*"%>
+<%@ page import="java.io.*"%>
+
+<%
+	String realFolder=""; // 웹 어플리케이션상의 절대 경로
+	// 파일이 업로드되는 폴더를 지정한다.
+	String saveFolder = "/fileSave";
+	String encType="utf-8"; // 엔코딩 타입
+	int maxSize = 5 * 1024 * 1024; // 최대 업로드 될 파일 크기
+	
+	ServletContext context = getServletContext();
+	
+%>

@@ -5,11 +5,11 @@ body {
 	font-size: 9pt; 
 }
 form {
+	margin:0 auto;
 	font-size: 9pt; 
 }
 
 table{
-	
 	font-size: 9pt;
 	border: 1pt solid black;
 }
