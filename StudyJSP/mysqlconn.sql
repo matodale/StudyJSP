@@ -146,11 +146,31 @@ desc shop_cart;
 
 /* shop_buy 테이블 작성 */
 
+create table shop_buy(
+	buy_id bigint not null,
+	buyer varchar(50) not null,
+	book_id varchar(12) not null,
+	book_title varchar(100) not null,
+	buy_price int not null,
+	buy_count tinyint not null,
+	book_image varchar(16) default 'nothing.jpg',
+	buy_date datetime not null,
+	account varchar(50) not null,
+	deliveryName varchar(10) not null,
+	deliveryTel varchar(20) not null,
+	deliveryAddress varchar(100) not null,
+	sanction varchar(10) default '상품 준비중'
+);
 
+desc shop_buy;
+desc shop_book;
+show databases;
+show tables;
 
+select * from shop_manager;
+select * from shop_book;
+select * from shop_book where book_kind = 1 order by reg_date desc limit 1 , 1;
+select managerPasswd from shop_manager where managerId = 'bookmaster@shop.com';
 
-
-
-
-
+alter table shop_book modify book_image varchar(100) default 'nothing.jpg';
 

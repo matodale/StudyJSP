@@ -1,0 +1,154 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="java.sql.Timestamp"%>
+<%@ include file="../../etc/color.jspf"%>
+<%
+String managerId = "";
+try {
+	managerId = (String) session.getAttribute("managerId");
+	if (managerId == null || managerId.equals("")) {
+		response.sendRedirect("../logon/managerLoginForm.jsp");
+	} else {
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상품등록</title>
+<link href="../../etc/login.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../js/script.js"></script>
+</head>
+<body>
+	<div class="title-login">
+		<h2>상품 등록</h2>
+	</div>
+	<div class="login-wrap-Register">
+		<div class="login-html">
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+			<label for="tab-1" class="tab">책 등록</label>
+			 <input id="tab-2"
+				type="radio" name="tab" class="sign-up">
+			<label for="tab-2" class="tab">책 목록</label>	
+			<div class="login-form">
+				<div class="sign-in-htm">
+					<form method="post" action="bookRegiterPro.jsp"
+						enctype="multipart/form-data">
+						<div class="group">
+							<label for="분류 선택" class="label"> 
+								분류 선택
+							</label>
+							<select name="book_kind">
+									<option value="100">문학</option>
+									<option value="200">외국어</option>
+									<option value="300">컴퓨터</option>
+								</select>
+						</div>
+						<div class="group">
+							<label for="책 제목" class="label"> 
+								책 제목
+							</label>
+							<input id="user"
+								type="text" class="input" name="book_title" maxlength="50"
+								size="50">
+						</div>
+						<div class="group">
+							<label for="책 가격" class="label"> 
+								가격
+							</label>
+							<input id="user"
+								type="text" class="input" name="book_price" maxlength="50"
+								size="50">
+						</div>
+						<div class="group">
+							<label for="책 수량" class="label"> 
+								수량
+							</label>
+							<input id="user"
+								type="text" class="input" name="book_count" maxlength="5"
+								size="10">
+						</div>
+						<div class="group">
+							<label for="책 저자" class="label"> 
+								저자
+							</label>
+							<input id="user"
+								type="text" class="input" name="author" maxlength="30"
+								size="20">
+						</div>
+						<div class="group">
+							<label for="책 출판사" class="label"> 
+								출판사
+							</label>
+							<input id="user"
+								type="text" class="input" name="publishing_com" maxlength="30"
+								size="20">
+						</div>
+						<div class="group">
+							<label for="책 출판일" class="label"> 
+								출판일
+							</label>
+							<select name="pubishing_year">
+							<%
+								Timestamp nowTime = new Timestamp(System.currentTimeMillis());
+								int lastYear = Integer.parseInt(nowTime.toString().substring(0,4));
+								for(int i = lastYear; i >=2010; i--){
+							%>
+								<option value="<%=i%>"><%=i%></option>
+								<%} %>
+							</select>
+							<select name="pubishing_month">
+							<%
+								for(int i = 1; i<=3; i++){
+							%>
+								<option value="<%=i%>"><%=i %></option>
+							<%
+								}
+							%>
+							</select>
+							<select name="pubishing_day">
+								<option></option>
+							</select>
+						</div>
+						<div class="group">
+							<label for="책 이미지" class="label"> 
+								이미지
+							</label>
+							<input type="file" name="book_image">
+						</div>
+						<div class="group">
+							<label for="책 내용" class="label"> 
+								내용
+							</label>
+							<textarea name="book_content" rows="13" cols="46">
+							</textarea>
+						</div>
+						<div class="group">
+							<label for="책 할인율" class="label"> 
+								할인율
+							</label>
+							<input class="input"type="text" size="5" maxlength="2" name="discount_rate">
+						</div>
+						<div class="group">
+							<input class="button" type="button" value="책 등록" onclick="checkFom(this.form)">
+						</div>
+						<div class="group">
+							<input class="button" type="reset" value="다시작성">
+						</div>
+						<div class="group">
+							<label for="관리자 메인" class="label"> <a
+								href="../managerMain.jsp">관리자 메인으로</a>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<%
+}
+} catch (Exception e) {
+e.printStackTrace();
+}
+%>

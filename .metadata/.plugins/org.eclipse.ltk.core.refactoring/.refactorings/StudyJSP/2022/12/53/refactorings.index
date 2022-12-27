@@ -1,3 +1,10 @@
 1671961546847	Rename resource 'ch14'
 1671966342437	Move 'fileSave' to 'webapp'
 1671967321954	Delete element
+1672049024439	Rename resource 'logincss.css'
+1672049592856	Delete element
+1672054337059	Move 2 resources to 'logon'
+1672129814276	Move 'fileSave' to 'ch14shop'
+1672129820388	Move 'fileSave' to 'webapp'
+1672129827191	Move 'imageFile' to 'ch14shop'
+1672129919124	Move 'imageFile' to 'webapp'
