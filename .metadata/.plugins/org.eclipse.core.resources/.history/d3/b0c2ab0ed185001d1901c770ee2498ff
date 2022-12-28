@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="../../etc/color.jspf" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>책 상품 삭제 Page</title>
+<link href="../../etc/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="title-login">
+		<h2>책 삭제 페이지</h2>
+	</div>
+	<div class="login-wrap">
+		<div class="login-html">
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+			<label for="tab-1" class="tab">책 삭제</label>
+			 <input id="tab-2"
+				type="radio" name="tab" class="sign-up">
+			<label for="tab-2" class="tab"></label>
+			<div class="login-form">
+				<div class="sign-in-htm">
+					<form method="post" name="delForm" action="bookDeletePro.jsp?book_id=<%=%>&book_kind=<%=%>"
+						onsubmit="return deleteSave()">
+					</form>
+				</div>
+			</div>		
+		</div>
+	</div>
+</body>
+</html>

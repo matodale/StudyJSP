@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>책 상품 삭제 Page</title>
+<link href="../../etc/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="title-login">
+		<h2>책 삭제 페이지</h2>
+	</div>
+	<div class="login-wrap">
+		<div class="login-html">
+			
+		</div>
+	</div>
+</body>
+</html>

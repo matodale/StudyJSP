@@ -58,7 +58,7 @@
 		<div class="login-html">
 			<div class="Notice-group">
 				<a href="../managerMain.jsp">관리자 메인으로</a> &nbsp;
-				<p> <%=book_kindName%>분류의 목록 : 
+				<p><%=book_kindName%> 분류의 목록 : 
 					<%if(book_kind.equals("all")){%>
 						<%=count%>개
 					<%}else{%>
@@ -105,14 +105,14 @@
 		ShopBookDataBean book = (ShopBookDataBean)bookList.get(i);	
 %>
 				<tr height="30">
-					<td align="center" width="50"><%=++number%></td>
+					<td align="center" width="50"><%=++number%> </td>
 					<td align="center" width="50"><%=book.getBook_kind()%></td>
 					<td align="center" width="200"><%=book.getBook_title()%></td>
 					<td align="center" width="100"><%=book.getBook_price()%></td>
 					<td align="center" width="100">
-						<%if(book.getBook_count()==0){ %>
+						<%if(book.getBook_count()==0){%>
 							<font color="red"><%="일시품절" %></font>
-						<%}else{ %>
+						<%}else{%>
 							<%=book.getBook_count()%>
 						<%} %>
 					</td>

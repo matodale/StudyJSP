@@ -1,0 +1,15 @@
+package ch14.bookshop.shopping;
+
+public class CartDataBean {
+	// 장바구니 아이디
+	private int cart_id;
+	// 구매자
+	private String buyer;
+	// 구매된 책의 아이디
+	private int book_id;
+	// 구매된 책명
+	// 판매가
+	// 판매 수량
+	// 책 이미지
+	
+}

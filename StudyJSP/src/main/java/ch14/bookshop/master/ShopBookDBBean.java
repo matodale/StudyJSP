@@ -194,7 +194,7 @@ public class ShopBookDBBean {
 		try {
 			conn = getConnection();
 			String sql = "select * from shop_book where book_kind = ? ";
-			sql += "order by reg_date desc limit ? , ? ";
+			sql += "order by reg_date desc limit ?,?";
 			
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, book_kind);
@@ -219,6 +219,7 @@ public class ShopBookDBBean {
 					book.setReg_date(rs.getTimestamp("reg_date"));
 					
 					bookList[i] = book;
+					
 					i++;
 				}while(rs.next());
 			}
@@ -246,7 +247,7 @@ public class ShopBookDBBean {
 		
 		try {
 			conn = getConnection();
-			pstmt = conn.prepareStatement("select * from shop_book where book_id = ?");
+			pstmt = conn.prepareStatement("select * from shop_book where book_id=? ");
 			pstmt.setInt(1, bookId);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
@@ -261,6 +262,7 @@ public class ShopBookDBBean {
 				book.setPublishing_com(rs.getString("publishing_com"));
 				book.setPublishing_date(rs.getString("publishing_date"));
 				book.setBook_image(rs.getString("book_image"));
+				book.setBook_content(rs.getString("book_content"));
 				book.setDiscount_rate(rs.getByte("discount_rate"));
 			}
 		}catch(Exception ex) {
@@ -285,10 +287,10 @@ public class ShopBookDBBean {
 		try {
 			conn = getConnection();
 			
-			sql = "update book set book_kind = ?, book_price = ? , ";
-			sql += "book_count = ? , author = ? , publishing_com = ? , publishing_date = ? , ";
-			sql += "book_image = ? , book_content = ?, discount_rate = ? ";
-			sql += "where book_id = ?";
+			sql = "update shop_book set book_kind=?,book_title=?,book_price=?,";
+			sql += "book_count=?,author=?,publishing_com=?,publishing_date = ?,";
+			sql += "book_image=?,book_content=?,discount_rate=?";
+			sql += " where book_id=?";
 			
 			pstmt = conn.prepareStatement(sql);
 			
@@ -323,8 +325,9 @@ public class ShopBookDBBean {
 		
 		try {
 			conn = getConnection();
-			pstmt = conn.prepareStatement("delete from shop_book where book_id");
+			pstmt = conn.prepareStatement("delete from shop_book where book_id = ?");
 			pstmt.setInt(1, bookId);
+			
 			pstmt.executeUpdate();
 		}catch(Exception ex) {
 			ex.printStackTrace();

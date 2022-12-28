@@ -1,0 +1,28 @@
+package ch14.bookshop.shopping;
+
+public class BuyDataBean {
+	// 구매 작업을 위한 데이터 자바빈
+	
+	// 구매 아이디
+	private Long buy_id;
+	// 구매자 이름
+	private String buyer;
+	// 구매된 책 아이디
+	private int book_id;
+	// 구매된 책명
+	private String book_title;
+	// 판매가격
+	private int buy_price;
+	// 판매 수량
+	private byte buy_count;
+	// 책 이미지
+	private String book_image;
+	// 구매 일자
+	private Timestamp buy_date;
+	// 결제 계좌
+	// 배송지
+	// 배송지 전화 번호
+	// 배송지 주소
+	// 배송 상황
+	
+}

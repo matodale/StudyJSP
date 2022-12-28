@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%@ include file="../../etc/color.jspf" %>
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Shopping Mail</title>
+<link href="../../etc/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="title-login">
+		<h2>주문 목록</h2>
+	</div>
+	<div class="login-wrap-Notice">
+		<div class="login-html">
+			<div class="Notice-group">
+				<table cols="">
+					<tr>
+						<td>구매 목록이 없습니다.</td>
+					</tr>
+				</table>
+				<a href="../managerMain.jsp"></a>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

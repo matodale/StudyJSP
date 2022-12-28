@@ -36,11 +36,11 @@ try {
 							<label for="분류 선택" class="label"> 
 								분류 선택
 							</label>
-								<select name="book_kind">
-									<option value="100">문학</option>
-									<option value="200">외국어</option>
-									<option value="300">컴퓨터</option>
-								</select>
+							<select name="book_kind">
+								<option value="100">문학</option>
+								<option value="200">외국어</option>
+								<option value="300">컴퓨터</option>
+							</select>
 						</div>
 						<div class="group">
 							<label for="책 제목" class="label"> 
